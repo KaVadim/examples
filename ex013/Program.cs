@@ -3,19 +3,25 @@
 // 645 -> 5
 // 78 -> третьей цифры нет
 // 32679 -> 6
-
-// Console.Clear();
-class Example
-{
-static void Main()
-{
+Console.Clear();
 Console.Write("введите число ");
-string username = Console.ReadLine();
-    if (username[2] == 0)
-    { Console.Write("числа нет"); }    
-    else
-    {
-Console.WriteLine(" 3й символ - '{1}'",
-username.Length, username[2]);}
-}
-}
+int number = Convert.ToInt32(Console.ReadLine());
+
+if (number3(number) == -1)
+Console.WriteLine("третьей цифры нет");
+else
+Console.WriteLine($"третье число {number3(number)}");
+
+int number3(int number)
+        {
+            int result = -1;
+            if (number >= 100)
+            {
+                while (number > 999)
+                {
+                    number = number / 10;
+                }
+                result = number % 10;
+            }
+            return result; 
+        }
