@@ -15,3 +15,10 @@ for (int i=0; i < arr.Length; i++)
     arr[i] = new Random().Next(0,100); 
     Console.Write(" " + arr[i]);
 }
+
+// int[] arr = new int [5];                             Это для ручного ввода массива
+// for(int i = 0; i < arr.Length; i++)
+// {
+// arr[i] = Convert.ToInt32(Console.ReadLine());
+// }
+// Console.WriteLine(string.Join(", ", arr));
