@@ -13,7 +13,7 @@ return arr;
 Console.Write("Введите длину массива: ");
 int num = Convert.ToInt32(Console.ReadLine());  // длина массива, кот ввели переходит в сайз
 int[] array = FillArray(num); // тут вызывается та функция непосредственно в самом коде
-int sumPositive = 0;
+int sumPositive = 0; // лучше присваивать, чтобы в ячейках не было хламаа из памяти
 int sumNegative = 0;
 Console.WriteLine(string.Join(", ", array));
 for(int i = 0; i < array.Length; i++)
